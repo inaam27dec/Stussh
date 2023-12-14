@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BankSelectionCell" customModule="StushApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6E-vN-Bk0">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="raz-mv-Fou">
+                                <rect key="frame" x="130" y="-10" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Bqn-k3-4cH"/>
+                                    <constraint firstAttribute="height" constant="100" id="Jaz-UP-dP8"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cc3-hA-ltI" userLabel="contentStack">
+                                <rect key="frame" x="30" y="53.666666666666657" width="140" height="93"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bank" translatesAutoresizingMaskIntoConstraints="NO" id="cnl-zy-9uB">
+                                        <rect key="frame" x="50" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Kij-KA-J9Y"/>
+                                            <constraint firstAttribute="width" constant="40" id="lLe-SF-Yuz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meezan Bank Private Ltd" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVQ-Ic-di1">
+                                        <rect key="frame" x="10.666666666666664" y="50" width="118.66666666666669" height="43"/>
+                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="cellEnabledColor"/>
+                        <constraints>
+                            <constraint firstItem="cc3-hA-ltI" firstAttribute="centerX" secondItem="C6E-vN-Bk0" secondAttribute="centerX" id="3sq-Lp-l8H"/>
+                            <constraint firstAttribute="trailing" secondItem="cc3-hA-ltI" secondAttribute="trailing" constant="30" id="9gK-Qr-txM"/>
+                            <constraint firstAttribute="trailing" secondItem="raz-mv-Fou" secondAttribute="trailing" constant="-30" id="WQm-BR-G6d"/>
+                            <constraint firstItem="cc3-hA-ltI" firstAttribute="centerY" secondItem="C6E-vN-Bk0" secondAttribute="centerY" id="ZKS-aE-QfC"/>
+                            <constraint firstItem="raz-mv-Fou" firstAttribute="top" secondItem="C6E-vN-Bk0" secondAttribute="top" constant="-10" id="oYH-yI-CoW"/>
+                            <constraint firstItem="cc3-hA-ltI" firstAttribute="leading" secondItem="C6E-vN-Bk0" secondAttribute="leading" constant="30" id="oe9-83-kaJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="C6E-vN-Bk0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AIU-dy-D3c"/>
+                <constraint firstAttribute="trailing" secondItem="C6E-vN-Bk0" secondAttribute="trailing" id="O5T-Kl-1eJ"/>
+                <constraint firstAttribute="bottom" secondItem="C6E-vN-Bk0" secondAttribute="bottom" id="UUr-HF-FJE"/>
+                <constraint firstItem="C6E-vN-Bk0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rZj-TF-fTO"/>
+            </constraints>
+            <point key="canvasLocation" x="12" y="21"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bank" width="50" height="45"/>
+        <image name="ic_splash_logo" width="63" height="85.666664123535156"/>
+        <namedColor name="cellEnabledColor">
+            <color red="0.90588235294117647" green="0.93725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

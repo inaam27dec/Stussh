@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SavingHubCell" rowHeight="327" id="KGk-i7-Jjw" customClass="SavingHubCell" customModule="StushApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="327"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="327"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avj-Xt-V3h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="325"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mWh-HT-aWk" userLabel="itemsStack">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="254"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xl7-jX-0oG">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnl-Gc-M3I" customClass="PaddingLabel" customModule="StushApp" customModuleProvider="target">
+                                                <rect key="frame" x="310" y="11" width="68" height="28"/>
+                                                <color key="backgroundColor" name="AppLightGreenColor"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per Week Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPu-6Y-dMZ">
+                                                <rect key="frame" x="15" y="16" width="130.66666666666666" height="18"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SPu-6Y-dMZ" firstAttribute="leading" secondItem="xl7-jX-0oG" secondAttribute="leading" constant="15" id="0Bj-hg-dKD"/>
+                                            <constraint firstAttribute="height" constant="50" id="2KY-q6-VAt"/>
+                                            <constraint firstItem="SPu-6Y-dMZ" firstAttribute="centerY" secondItem="xl7-jX-0oG" secondAttribute="centerY" id="778-qL-Wep"/>
+                                            <constraint firstItem="qnl-Gc-M3I" firstAttribute="centerY" secondItem="xl7-jX-0oG" secondAttribute="centerY" id="Lhi-5a-Npq"/>
+                                            <constraint firstAttribute="trailing" secondItem="qnl-Gc-M3I" secondAttribute="trailing" constant="15" id="RMi-6Q-BDx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4u-mo-TEQ" userLabel="separatorView">
+                                        <rect key="frame" x="15" y="50" width="363" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="UVu-e4-2RY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uwg-DR-mti">
+                                        <rect key="frame" x="0.0" y="51" width="393" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 Weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-az-6dG" customClass="PaddingLabel" customModule="StushApp" customModuleProvider="target">
+                                                <rect key="frame" x="270.66666666666669" y="11" width="107.33333333333331" height="28"/>
+                                                <color key="backgroundColor" name="AppLightGreenColor"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programs Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctT-yl-rxE">
+                                                <rect key="frame" x="14.999999999999993" y="16" width="111.33333333333331" height="18"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ctT-yl-rxE" firstAttribute="leading" secondItem="uwg-DR-mti" secondAttribute="leading" constant="15" id="1pW-rv-BTk"/>
+                                            <constraint firstAttribute="trailing" secondItem="gLk-az-6dG" secondAttribute="trailing" constant="15" id="AQl-VR-MS0"/>
+                                            <constraint firstAttribute="height" constant="50" id="JeV-GY-36g"/>
+                                            <constraint firstItem="gLk-az-6dG" firstAttribute="centerY" secondItem="uwg-DR-mti" secondAttribute="centerY" id="QYJ-I2-x47"/>
+                                            <constraint firstItem="ctT-yl-rxE" firstAttribute="centerY" secondItem="uwg-DR-mti" secondAttribute="centerY" id="hoN-TP-e82"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SF0-dG-ed6" userLabel="separatorView">
+                                        <rect key="frame" x="15" y="101" width="363" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="8Q6-Oj-Hca"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-XM-KQv">
+                                        <rect key="frame" x="0.0" y="102" width="393" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2500$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cma-dk-VUh" customClass="PaddingLabel" customModule="StushApp" customModuleProvider="target">
+                                                <rect key="frame" x="291" y="11" width="87" height="28"/>
+                                                <color key="backgroundColor" name="AppLightGreenColor"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount Received:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSj-O0-0jr">
+                                                <rect key="frame" x="15" y="16" width="128.33333333333334" height="18"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Cma-dk-VUh" firstAttribute="centerY" secondItem="XSN-XM-KQv" secondAttribute="centerY" id="36e-B2-41Y"/>
+                                            <constraint firstItem="vSj-O0-0jr" firstAttribute="centerY" secondItem="XSN-XM-KQv" secondAttribute="centerY" id="3SX-lE-4jC"/>
+                                            <constraint firstAttribute="trailing" secondItem="Cma-dk-VUh" secondAttribute="trailing" constant="15" id="CTA-pc-gDH"/>
+                                            <constraint firstAttribute="height" constant="50" id="Nfg-3f-6nK"/>
+                                            <constraint firstItem="vSj-O0-0jr" firstAttribute="leading" secondItem="XSN-XM-KQv" secondAttribute="leading" constant="15" id="pV7-0F-wan"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APU-MF-Orx" userLabel="separatorView">
+                                        <rect key="frame" x="15" y="152" width="363" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Wkf-Ag-0OD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Drr-k3-AKh">
+                                        <rect key="frame" x="0.0" y="153" width="393" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84Z-s1-O96" customClass="PaddingLabel" customModule="StushApp" customModuleProvider="target">
+                                                <rect key="frame" x="321.33333333333331" y="11" width="56.666666666666686" height="28"/>
+                                                <color key="backgroundColor" name="AppLightGreenColor"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person Required:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jX-XX-kib">
+                                                <rect key="frame" x="15.000000000000007" y="16" width="120.66666666666669" height="18"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Eyn-m8-bbe"/>
+                                            <constraint firstItem="5jX-XX-kib" firstAttribute="leading" secondItem="Drr-k3-AKh" secondAttribute="leading" constant="15" id="NMk-2f-tXG"/>
+                                            <constraint firstItem="5jX-XX-kib" firstAttribute="centerY" secondItem="Drr-k3-AKh" secondAttribute="centerY" id="S9k-Lc-BkP"/>
+                                            <constraint firstItem="84Z-s1-O96" firstAttribute="centerY" secondItem="Drr-k3-AKh" secondAttribute="centerY" id="e6Y-iv-xOl"/>
+                                            <constraint firstAttribute="trailing" secondItem="84Z-s1-O96" secondAttribute="trailing" constant="15" id="pvc-XA-gg0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-Zq-yDo" userLabel="separatorView">
+                                        <rect key="frame" x="15" y="203" width="363" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="w0n-SR-lP9"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kra-Wc-DtO">
+                                        <rect key="frame" x="0.0" y="204" width="393" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Aug, 23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20C-t2-Tc7" customClass="PaddingLabel" customModule="StushApp" customModuleProvider="target">
+                                                <rect key="frame" x="269.33333333333331" y="11" width="108.66666666666669" height="28"/>
+                                                <color key="backgroundColor" name="AppLightGreenColor"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingTop">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingBottom">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbe-C6-Y9X">
+                                                <rect key="frame" x="14.999999999999993" y="16" width="98.333333333333314" height="18"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="20C-t2-Tc7" firstAttribute="centerY" secondItem="kra-Wc-DtO" secondAttribute="centerY" id="Gia-KQ-lWe"/>
+                                            <constraint firstAttribute="height" constant="50" id="MnP-Ii-bey"/>
+                                            <constraint firstAttribute="trailing" secondItem="20C-t2-Tc7" secondAttribute="trailing" constant="15" id="Qas-uR-Omt"/>
+                                            <constraint firstItem="sbe-C6-Y9X" firstAttribute="leading" secondItem="kra-Wc-DtO" secondAttribute="leading" constant="15" id="RvB-S4-jhy"/>
+                                            <constraint firstItem="sbe-C6-Y9X" firstAttribute="centerY" secondItem="kra-Wc-DtO" secondAttribute="centerY" id="iFa-Ep-z5d"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SF0-dG-ed6" firstAttribute="leading" secondItem="mWh-HT-aWk" secondAttribute="leading" constant="15" id="87C-UU-EFh"/>
+                                    <constraint firstItem="xl7-jX-0oG" firstAttribute="leading" secondItem="mWh-HT-aWk" secondAttribute="leading" id="911-sl-ZiO"/>
+                                    <constraint firstAttribute="trailing" secondItem="G4u-mo-TEQ" secondAttribute="trailing" constant="15" id="9Q0-Fc-c8B"/>
+                                    <constraint firstItem="APU-MF-Orx" firstAttribute="leading" secondItem="mWh-HT-aWk" secondAttribute="leading" constant="15" id="M3e-it-S8L"/>
+                                    <constraint firstAttribute="trailing" secondItem="SF0-dG-ed6" secondAttribute="trailing" constant="15" id="U0C-yn-e9a"/>
+                                    <constraint firstAttribute="trailing" secondItem="APU-MF-Orx" secondAttribute="trailing" constant="15" id="UYs-VN-CyQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="yUa-Zq-yDo" secondAttribute="trailing" constant="15" id="YcT-lQ-Dsc"/>
+                                    <constraint firstItem="G4u-mo-TEQ" firstAttribute="leading" secondItem="mWh-HT-aWk" secondAttribute="leading" constant="15" id="k2T-47-guW"/>
+                                    <constraint firstItem="yUa-Zq-yDo" firstAttribute="leading" secondItem="mWh-HT-aWk" secondAttribute="leading" constant="15" id="p8k-SA-woJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="xl7-jX-0oG" secondAttribute="trailing" id="uOo-Nn-RZQ"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQc-tU-Tek" userLabel="buttonView">
+                                <rect key="frame" x="0.0" y="264" width="393" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rU-lj-DOd" userLabel="btnJoin">
+                                        <rect key="frame" x="268" y="13.666666666666686" width="110" height="33"/>
+                                        <color key="backgroundColor" name="AppPrimaryColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="yCq-7e-izr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="43P-1t-eMT"/>
+                                    <constraint firstItem="0rU-lj-DOd" firstAttribute="centerY" secondItem="NQc-tU-Tek" secondAttribute="centerY" id="YnN-Kr-bcA"/>
+                                    <constraint firstAttribute="trailing" secondItem="0rU-lj-DOd" secondAttribute="trailing" constant="15" id="xEG-6T-gGF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="cellEnabledColor"/>
+                        <constraints>
+                            <constraint firstItem="NQc-tU-Tek" firstAttribute="leading" secondItem="avj-Xt-V3h" secondAttribute="leading" id="Bpo-vy-fuJ"/>
+                            <constraint firstItem="mWh-HT-aWk" firstAttribute="top" secondItem="avj-Xt-V3h" secondAttribute="top" id="KeH-tC-icN"/>
+                            <constraint firstItem="NQc-tU-Tek" firstAttribute="top" secondItem="mWh-HT-aWk" secondAttribute="bottom" constant="10" id="Kxc-5j-aoz"/>
+                            <constraint firstItem="NQc-tU-Tek" firstAttribute="top" secondItem="mWh-HT-aWk" secondAttribute="bottom" constant="10" id="TFd-tO-ogr"/>
+                            <constraint firstAttribute="trailing" secondItem="mWh-HT-aWk" secondAttribute="trailing" id="crT-AH-0YS"/>
+                            <constraint firstAttribute="trailing" secondItem="NQc-tU-Tek" secondAttribute="trailing" id="lax-2a-ieM"/>
+                            <constraint firstAttribute="height" constant="325" id="sjw-2Y-8aM"/>
+                            <constraint firstItem="mWh-HT-aWk" firstAttribute="leading" secondItem="avj-Xt-V3h" secondAttribute="leading" id="skc-sc-gbH"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="avj-Xt-V3h" secondAttribute="trailing" id="Zud-U9-jtF"/>
+                    <constraint firstItem="avj-Xt-V3h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e0u-MY-D4J"/>
+                    <constraint firstItem="avj-Xt-V3h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yNh-uT-KKT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="182.44274809160305" y="120.07042253521128"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="20C-t2-Tc7">
+            <size key="intrinsicContentSize" width="108.66666666666667" height="28"/>
+        </designable>
+        <designable name="84Z-s1-O96">
+            <size key="intrinsicContentSize" width="56.666666666666671" height="28"/>
+        </designable>
+        <designable name="Cma-dk-VUh">
+            <size key="intrinsicContentSize" width="87" height="28"/>
+        </designable>
+        <designable name="gLk-az-6dG">
+            <size key="intrinsicContentSize" width="107.33333333333333" height="28"/>
+        </designable>
+        <designable name="qnl-Gc-M3I">
+            <size key="intrinsicContentSize" width="68" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="AppLightGreenColor">
+            <color red="0.93333333333333335" green="0.9882352941176471" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppPrimaryColor">
+            <color red="0.19300000369548798" green="0.36000001430511475" blue="0.54900002479553223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="cellEnabledColor">
+            <color red="0.90588235294117647" green="0.93725490196078431" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
